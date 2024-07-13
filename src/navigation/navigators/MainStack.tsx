@@ -22,6 +22,7 @@ export function MainStackComponent() {
   const commonScreenOptions = useCommonScreenOptions();
 
   return (
+    // TODO:默认
     // <MainStack.Navigator screenOptions={commonScreenOptions}>
     //   <MainStack.Screen
     //     name="DASHBOARD_SCREEN"
@@ -66,6 +67,8 @@ export function MainStackComponent() {
     //     }}
     //   />
     // </MainStack.Navigator>
+
+    // TODO:底部菜单
     <Tab.Navigator
       screenOptions={
         ({ route }) => ({
