@@ -3,6 +3,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 
 const image1 = { uri: "https://static.aiwobeauty.com/server/hardware_wxapp/nurse_switch2.png" };
 const image2 = { uri: "https://static.aiwobeauty.com/server/hardware_wxapp/myai_nurse_icon1.png" };
+const image3 = { uri: "https://static.aiwobeauty.com/server/hardware_wxapp/nurse_icon4.png" };
 
 export function DeviceDetailsScreen() {
   return (
@@ -20,7 +21,17 @@ export function DeviceDetailsScreen() {
           <Text style={styles.text3}>重新连接</Text>
         </View>
       </View>
-      <View style={styles.box2}></View>
+      <View style={styles.box2}>
+        <Image source={image3} style={styles.image3} />
+        <View style={styles.box4}>
+          <Text style={styles.text4}>EMS极光按摩</Text>
+          <Text style={styles.text5}>7月9日 15:43:05</Text>
+        </View>
+        <View style={styles.box5}>
+          <Text style={styles.text6}>1</Text>
+          <Text style={styles.text7}>秒</Text>
+        </View>
+      </View>
     </View>
   );
 }
@@ -48,6 +59,7 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     paddingBottom: 12,
     paddingLeft: 14,
+    flexDirection: "row",
   },
   text1: {
     fontWeight: "bold",
@@ -97,5 +109,36 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#fff",
     textAlign: "center",
+  },
+  image3: {
+    width: 40,
+    height: 40,
+  },
+  box4: {
+    marginTop: 6,
+    marginLeft: 12,
+  },
+  box5: {
+    position: "absolute",
+    top: 22,
+    right: 24,
+    flexDirection: "row",
+  },
+  text4: {
+    color: "#120E0E",
+    fontSize: 14,
+  },
+  text5: {
+    color: "#949292",
+    fontSize: 12,
+  },
+  text6: {
+    color: "#120E0E",
+    fontSize: 20,
+  },
+  text7: {
+    color: "#949292",
+    fontSize: 12,
+    marginTop: 7,
   },
 });
